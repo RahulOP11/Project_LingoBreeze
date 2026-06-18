@@ -1,0 +1,73 @@
+# Flutter / Dart
+
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+
+# Flutter generated
+
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins
+.metadata
+
+# Android
+
+/android/.gradle/
+/android/captures/
+/android/local.properties
+/android/.cxx/
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Firebase
+
+/android/app/google-services.json
+
+# Generated Android files
+
+**/GeneratedPluginRegistrant.java
+
+# Keystore files
+
+key.properties
+**/*.keystore
+**/*.jks
+
+# Gradle
+
+.gradle/
+
+# Node.js
+
+backend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code
+
+.vscode/
+
+# IntelliJ / Android Studio
+
+.idea/
+*.iml
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+desktop.ini
+
+# Logs
+
+*.log
+/android/app/google-services.json
+.json

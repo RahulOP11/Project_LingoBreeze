@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "775990006584",
+    "project_id": "lingobreeze-eb4c9",
+    "storage_bucket": "lingobreeze-eb4c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775990006584:android:73d6827f0f861dcc7c27cd",
+        "android_client_info": {
+          "package_name": "com.rahul.lingobreeze"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArNa57ZHHV1-P4EsBouIEZ8VrH1EIxB2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
