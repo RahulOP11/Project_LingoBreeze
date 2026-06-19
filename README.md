@@ -1,39 +1,60 @@
-# LingoBreeze Dictionary
-//My Flutter Development Intern Assignmnet//
-LingoBreeze Dictionary is a Flutter-based application that fetches vocabulary data from a Node.js API and stores saved words in Firebase Firestore.
+# LingoBreeze Vocabulary Screen
 
-## Features
+<p align="center">
+  <b>A Flutter-based Application built as part of a Flutter Development Internship Assessment.</b>
+</p>
 
-* Fetch vocabulary words from a Node.js REST API
-* Save words to Firebase Firestore
-* View saved vocabulary words anytime
-* State management using Riverpod.
+## Overview
 
-### Frontend
-* Flutter
-* Riverpod
-* Dio
+LingoBreeze Dictionary is a vocabulary learning application that fetches word data from a Node.js REST API and allows users to save words permanently using Firebase Firestore.
 
-### Backend
-* Node.js
-* Express.js
+###  Key Features
 
-### Database
-* Firebase Firestore
+1. Fetch vocabulary words from a Node.js API
+2. Save favorite words to Firebase Firestore
+3. View saved vocabulary anytime
+4. Riverpod state management
 
-## 📸 Screenshots
+## Tech Stack
 
-Add screenshots of the following screens:
+| Layer            | Technology           |
+| ---------------- | -------------------- |
+| Frontend         | Flutter              |
+| State Management | Riverpod             |
+| Backend          | Node.js + Express.js |
+| Database         | Firebase Firestore   |
 
-* Home Screen ![alt text](snapshots/Image1.jpeg)
-* Saved Vocabulary Screen ![alt text](snapshots/Image2.jpeg)
-* Add Word Screen ![alt text](snapshots/Image3.jpeg)
-* Loading State  ![alt text](snapshots/Image4.jpeg)
-* Error State ![alt text](snapshots/Image5.jpeg)
-* Firebase Integration ![alt text](snapshots/image-6.png)
-* Backend running Locally ![alt text](snapshots/image-7.png)
+#  Application Screenshots
 
----
+<p align="center">
+
+<b>Home Screen</b><br> <img src="snapshots/Image1.jpeg" width="250"/>
+
+<br><br>
+
+<b>Saved Vocabulary Screen</b><br> <img src="snapshots/Image2.jpeg" width="250"/>
+
+<br><br>
+
+<b>Add Word Screen</b><br> <img src="snapshots/Image3.jpeg" width="250"/>
+
+<br><br>
+
+<b>Loading State</b><br> <img src="snapshots/Image4.jpeg" width="250"/>
+
+<br><br>
+
+<b>Error State</b><br> <img src="snapshots/Image5.jpeg" width="250"/>
+
+<br><br>
+
+<b>Firebase Integration</b><br> <img src="snapshots/image-6.png" width="600"/>
+
+<br><br>
+
+<b>Backend Running Locally</b><br> <img src="snapshots/image-7.png" width="600"/>
+
+</p>
 
 ## 📂 Project Structure
 
@@ -56,33 +77,54 @@ backend/
 
 ---
 
-## 🔥 Firebase Setup
+# Firebase Setup
 
-1. Create a Firebase project.
-2. Register an Android application using:
-3. Download the `google-services.json` file.
-4. Place it inside:
+### 1. Create Firebase Project
+
+Create a new Firebase project from the Firebase Console.
+
+### 2. Register Android App
+
+Add your Android application to Firebase.
+
+### 3. Download Configuration File
+
+Download:
+
+```text
+google-services.json
+```
+
+Place it inside:
 
 ```text
 flutter-app/android/app/google-services.json
 ```
-5. Create a Firestore Database.
-6. Start Firestore in Test Mode for development.
+
+### 4. Create Firestore Database
+
+Create a Firestore Database and start it in:
+
+```text
+Test Mode
+```
+
+for development purposes.
 
 ---
 
-## How to Run the Project
+# Running the Project
 
-### Step 1: Clone the Repository
+## Step 1: Clone Repository
 
 ```bash
 git clone <your-repository-url>
 cd LingoBreeze
 ```
----
-### Step 2: Start the Backend Server
 
-Navigate to the backend folder:
+## Step 2: Start Backend Server
+
+Navigate to backend folder:
 
 ```bash
 cd backend
@@ -94,25 +136,24 @@ Install dependencies:
 npm install
 ```
 
-Start the server:
+Run server:
 
 ```bash
 npm start
 ```
 
-The API will be available at:
+API Endpoint:
 
 ```text
 http://localhost:3000/api/words
 ```
 
-You can verify it by opening the URL in a browser.
+Verify by opening the URL in your browser.
 
----
 
-### Step 3: Configure the API URL
+## Step 3: Configure API URL
 
-Update your Flutter configuration file with your local machine IP address:
+Update your Flutter configuration:
 
 ```dart
 class AppConfig {
@@ -128,34 +169,50 @@ class AppConfig {
 }
 ```
 
-This is required when running the app on a physical Android device.
+## Step 4: Run Flutter App
 
----
-
-### Step 4: Run the Flutter Application
- 
-Navigate to the Flutter project:
+Navigate to Flutter application:
 
 ```bash
 cd flutter-app
 ```
 
-Install dependencies:
+Install packages:
 
 ```bash
 flutter pub get
 ```
 
-Run the application:
+Run app:
 
 ```bash
 flutter run
 ```
 
-Tips: 1. Make sure an Android device or emulator is connected before running the application.
- 2.You can connect wirelessly with QR Code scan from Andriod Studio, make sure your PC and Phone are connected to the same WiFi. 
- 3. You can enable USB debugging from Developer option in your phone, and connect your PC and Phone with an USB cable, check for devices and then start the flutter application, it will run on your phone in degub mode.
-========================================================
-Built as part of a Flutter internship assessment project.
-Thank You for reading.
-========================================================
+---
+
+# My Tips
+
+### Wireless Connection
+
+* Connect PC and Android device to the same Wi-Fi.
+* Use Android Studio's Wireless Debugging (QR Code).
+
+### USB Connection
+
+* Enable Developer Options.
+* Enable USB Debugging.
+* Connect phone via USB cable.
+* Verify device connection before running:
+
+```bash
+flutter devices
+```
+
+<p align="center">
+   If you liked this project, consider giving it a star.
+</p>
+
+<p align="center">
+  <b>Thank You for Reading ❤️</b>
+</p>
