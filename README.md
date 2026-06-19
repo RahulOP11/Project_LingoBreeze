@@ -25,13 +25,13 @@ LingoBreeze Dictionary is a Flutter-based application that fetches vocabulary da
 
 Add screenshots of the following screens:
 
-* Home Screen ![alt text](image-1.png)
-* Saved Vocabulary Screen ![alt text](image-4.png)
-* Add Word Screen ![alt text](image-3.png)
-* Loading State  ![alt text](image-5.png)
-* Error State ![alt text](image-2.png)
-* Firebase Integration ![alt text](image-6.png)
-* Backend running Locally ![alt text](image-7.png)
+* Home Screen ![alt text](snapshots/Image1.jpeg)
+* Saved Vocabulary Screen ![alt text](snapshots/Image2.jpeg)
+* Add Word Screen ![alt text](snapshots/Image3.jpeg)
+* Loading State  ![alt text](snapshots/Image4.jpeg)
+* Error State ![alt text](snapshots/Image5.jpeg)
+* Firebase Integration ![alt text](snapshots/image-6.png)
+* Backend running Locally ![alt text](snapshots/image-7.png)
 
 ---
 
@@ -133,7 +133,7 @@ This is required when running the app on a physical Android device.
 ---
 
 ### Step 4: Run the Flutter Application
-
+ 
 Navigate to the Flutter project:
 
 ```bash

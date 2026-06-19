@@ -17,30 +17,86 @@ class VocabularyScreen extends ConsumerWidget {
 
     return Scaffold(
      appBar: AppBar(
-  backgroundColor: Color.fromARGB(255, 189, 223, 247),
-  elevation: 2,
-  toolbarHeight: 75,
-  title: const Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    mainAxisSize: MainAxisSize.min,
+  backgroundColor: const Color.fromARGB(255, 189, 223, 247),
+  elevation: 0,
+  toolbarHeight: 80,
+  title: Row(
     children: [
-      Text(
-        'LingoBreeze Dictionary',
-        style: TextStyle(
-          fontSize: 22,
-          fontWeight: FontWeight.bold,
-          color: Colors.black87,
-        ),
+      CircleAvatar(
+        radius: 21,
+        backgroundImage: AssetImage('assets/images/lingobreeze_logo.png'),
+        backgroundColor: Colors.transparent,
       ),
-      Text(
-        'Build your vocabulary daily!!',
-        textAlign: TextAlign.left,
-        style: TextStyle(
-          fontSize: 16,
-          color: Colors.black54,
-        ),
+      const SizedBox(width: 12),
+      const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            'LingoBreeze',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+              color: Colors.black87,
+              letterSpacing: 0.3,
+            ),
+          ),
+          SizedBox(height: 4),
+          Text(
+            'Build your vocabulary daily',
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: Colors.black45,
+              letterSpacing: 0.2,
+            ),
+          ),
+        ],
       ),
     ],
+  ),
+  actions: [
+    Container(
+      margin: const EdgeInsets.only(right: 6),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.5),
+        shape: BoxShape.circle,
+      ),
+      child: IconButton(
+        icon: const Icon(Icons.search_rounded, color: Colors.black87),
+        onPressed: () {},
+        tooltip: 'Search',
+      ),
+    ),
+    Container(
+      margin: const EdgeInsets.only(right: 10),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.5),
+        shape: BoxShape.circle,
+      ),
+      child: IconButton(
+        icon: const Icon(Icons.more_vert_rounded, color: Colors.black87),
+        onPressed: () {},
+        tooltip: 'More',
+      ),
+    ),
+  ],
+  bottom: PreferredSize(
+    preferredSize: const Size.fromHeight(36),
+    child: Container(
+      color: const Color.fromARGB(255, 2, 27, 120).withValues(alpha: 0.4),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 9),
+      alignment: Alignment.centerLeft,
+      child: const Text(
+        'VIEW ALL YOUR SAVED WORDS!!',
+        style: TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+          color: Colors.black54,
+          letterSpacing: 1.4,
+        ),
+      ),
+    ),
   ),
 ),
       body: RefreshIndicator(
